@@ -1,8 +1,32 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Header from "../components/header";
+import Post from "../components/post";
+import '../global.css'
 
-export default function Home() {
+export default function About() {
+
   return (
-    <div>Hello world</div>
+    <div>
+
+
+      <div className="main_container">
+
+        <div className="sidebar">
+          <Header text="Blog"></Header>
+        </div>
+
+        <div className="content">
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+          <Post></Post>
+        </div>
+
+
+      </div>
+
+    </div>
   );
 }

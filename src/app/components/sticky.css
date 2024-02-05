@@ -1,0 +1,10 @@
+.sticky {
+    position: fixed;
+    top: 100vh;
+    animation: scroll_in_sticky 1s linear calc(var(--scroll2) * -1s) 1 paused, forwards;
+}
+
+@keyframes scroll_in_sticky {
+    from {bottom: 100vh}
+    to {top: 0} 
+  }
