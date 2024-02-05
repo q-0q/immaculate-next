@@ -1,0 +1,27 @@
+.monarch_landing {
+    font-family: Monarch;
+    font-size: 8vw;
+    margin-block: 0;
+  }
+
+  .slide_in {
+    animation: slide_in 4s cubic-bezier(0.365, 0.140, 0.000, 1.010) backwards;
+    left: 0vw;
+    position: relative;
+  }
+  
+  .slide_out {
+    animation: slide_out 1s ease-in calc(var(--scroll1) * -1s) 1 paused, forwards;
+    position: relative;
+  }
+
+  @keyframes slide_in {
+    from {left: -90vw;} 
+    to {left: 0vw;} 
+  }
+  
+  @keyframes slide_out {
+    from {left: 0}
+    to {left: 90vw} 
+  }
+  

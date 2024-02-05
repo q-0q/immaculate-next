@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Ornamentum';
+      src: url('../fonts/OrnamentumRegular.eot');
+      src: url('../fonts/OrnamentumRegular.eot') format('embedded-opentype'),
+           url('../fonts/OrnamentumRegular.woff2') format('woff2'),
+           url('../fonts/OrnamentumRegular.woff') format('woff'),
+           url('../fonts/OrnamentumRegular.ttf') format('truetype'),
+           url('../fonts/OrnamentumRegular.svg') format('svg');
+  }
+  
+  @font-face {
+    font-family: 'Monarch';
+    src: url('../fonts/WTMonarchNovaRoman.eot');
+    src: url('../fonts/WTMonarchNovaRoman.eot') format('embedded-opentype'),
+         url('../fonts/WTMonarchNovaRoman.woff2') format('woff2'),
+         url('../fonts/WTMonarchNovaRoman.woff') format('woff'),
+         url('../fonts/WTMonarchNovaRoman.ttf') format('truetype'),
+         url('../fonts/WTMonarchNovaRoman.svg#WTMonarchNovaRoman') format('svg');
+  }
