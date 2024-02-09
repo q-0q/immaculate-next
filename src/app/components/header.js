@@ -1,10 +1,17 @@
 
 import './header.css'
+import MenuButton from './menu-button'
 
 export default function Header(props) {
-    return(
-        <p className="monarch_header" style={{ margin: '0', paddingTop: '2rem' }}>
-            {props.text}
-        </p>
+    return (
+        <div style={{ display: 'flex', flexDirection: 'row' , justifyContent: 'flex-start', alignItems: 'center', position: 'fixed', paddingTop: '2rem' }}>
+
+<MenuButton></MenuButton>
+
+            <p className="monarch_header" style={{ margin: '0'}}>
+                {props.text}
+            </p>
+        </div>
+
     )
 }

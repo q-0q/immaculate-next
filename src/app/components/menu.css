@@ -1,0 +1,59 @@
+.screen {
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    pointer-events: none;
+
+}
+
+.menu{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -250px;
+}
+
+.screen_open {
+    animation: screen_open 0.3s ease-in forwards;
+}
+
+.screen_close {
+    animation: screen_close 0.3s ease-out forwards;
+}
+
+.menu_open {
+    animation: menu_open 0.3s ease-out forwards;
+}
+
+.menu_close {
+    animation: menu_close 0.1s linear forwards;
+}
+
+
+@keyframes menu_open {
+    from {left: -250px}
+    to {left: 0}
+}
+
+@keyframes menu_close {
+    from {left: 0}
+    to {left: -250px}
+}
+
+@keyframes screen_open {
+    from {backdrop-filter: blur(0px);}
+    to {backdrop-filter: blur(3px); pointer-events: all;}
+}
+
+@keyframes screen_close {
+    from {backdrop-filter: blur(3px);}
+    to {backdrop-filter: blur(0px); pointer-events: none;}
+}
+

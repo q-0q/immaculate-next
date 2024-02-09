@@ -9,8 +9,7 @@
         flex-direction: row;
         justify-content: flex-start;
         
-        padding-left: 50px;
-        padding-right: 600px;
+        padding-left: 40px;
     }
 
     .sidebar {
@@ -24,5 +23,6 @@
         padding-top: 80px;
         display: flex;
         flex-direction: column;
+        width: 700px;
     }
 }
