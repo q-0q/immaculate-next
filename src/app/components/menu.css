@@ -35,7 +35,7 @@
 }
 
 .menu_close {
-    animation: menu_close 0.1s linear forwards;
+    animation: menu_close 0.3s ease-in forwards;
 }
 
 

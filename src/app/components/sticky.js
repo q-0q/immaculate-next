@@ -15,12 +15,19 @@ export default function Sticky() {
         }
 
         window.addEventListener('scroll', () => {
-            document.body.style.setProperty('--scroll2', lerpScroll(0, window.innerHeight));
+            var el = document.getElementById("sticky");
+            if (lerpScroll(0, window.innerHeight) > 0.998) {
+                el.classList.add("sticky");
+            }
+            else {
+                el.classList.remove("sticky");
+            }
+
         }, false);
     }, []);
 
     return (
-        <div className='sticky'>
+        <div id='sticky'>
             <Header text="Blog"/>
         </div>
     )
