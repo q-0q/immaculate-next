@@ -16,7 +16,7 @@ export default function Sticky() {
 
         window.addEventListener('scroll', () => {
             var el = document.getElementById("sticky");
-            if (lerpScroll(0, document.documentElement.clientHeight) > 0.998) {
+            if (lerpScroll(0, window.screen.availHeight) > 0.998) {
                 el.classList.add("sticky");
             }
             else {
