@@ -9,18 +9,18 @@
         flex-direction: row;
         justify-content: flex-start;
         
-        padding-left: 40px;
+        padding-left: 30px;
     }
 
     .sidebar {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        margin-right: 250px;
+        margin-right: 200px;
     }
 
     .content {
-        padding-top: 80px;
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
         width: 700px;

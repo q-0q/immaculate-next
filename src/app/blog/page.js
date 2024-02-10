@@ -2,7 +2,7 @@ import Header from "../components/header";
 import Post from "../components/post";
 import '../global.css'
 
-export default function About() {
+export default function Blog() {
 
   return (
     <div>
@@ -11,7 +11,7 @@ export default function About() {
       <div className="main_container">
 
         <div className="sidebar">
-          <Header text="About"></Header>
+          <Header text="Blog"></Header>
         </div>
 
         <div className="content">

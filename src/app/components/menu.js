@@ -1,6 +1,8 @@
 
 'use client'
 import "./menu.css"
+import Link from "next/link"
+import MenuItem from './menu-item'
 
 export default function Menu(props) {
 
@@ -11,22 +13,21 @@ export default function Menu(props) {
         document.getElementById("menuscreen").classList.add("screen_close")
     }
 
-
     return (
 
         <div className="screen" id="menuscreen" onClick={imageClick}>
             <div className="menu" id="menu">
                 <div style={{padding: '30px'}}>
-                <p>Hi!</p>
-                <p>Hi!</p>
-                <p>Hi!</p>
-                <p>Hi!</p>
-                <p>Hi!</p>
+                    <MenuItem href="/" title="Immaculate Conception"/>
+                    <MenuItem href="/about" title="About"/>
+                    <MenuItem href="/blog" title="Blog"/>
+                    <MenuItem href="/join" title="Join"/>
+                    <MenuItem href="/donate" title="Donate"/>
+
                 </div>
             </div>
 
         </div>
-
 
     )
 }

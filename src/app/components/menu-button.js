@@ -11,8 +11,8 @@ export default function MenuButton() {
 
     return (
 
-        <div>
-            <img  src="/left-arrow.png" style={{ width: '20px', height: '20px', marginBottom: '1rem', marginRight: '2rem', cursor: "pointer"}} onClick={() => imageClick()}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50px', height: '50px', marginBottom: '0.4rem', marginRight: '0.1rem', cursor: "pointer" }} onClick={() => imageClick()}>
+            <img style={{ maxWidth: '30%' }} src="/left-arrow.png">
             </img>
         </div>
 

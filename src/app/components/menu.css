@@ -7,17 +7,19 @@
     flex-direction: row;
     justify-content: flex-start;
     pointer-events: none;
-
 }
 
 .menu{
-    width: 250px;
+    width: 200px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     position: relative;
-    left: -250px;
+    left: -200px;
+    font-family: Monarch;
+
+
 }
 
 .screen_open {
@@ -38,22 +40,22 @@
 
 
 @keyframes menu_open {
-    from {left: -250px}
+    from {left: -200px}
     to {left: 0}
 }
 
 @keyframes menu_close {
     from {left: 0}
-    to {left: -250px}
+    to {left: -200px}
 }
 
 @keyframes screen_open {
     from {backdrop-filter: blur(0px);}
-    to {backdrop-filter: blur(3px); pointer-events: all;}
+    to {backdrop-filter: blur(1.5px); pointer-events: all;}
 }
 
 @keyframes screen_close {
-    from {backdrop-filter: blur(3px);}
+    from {backdrop-filter: blur(1.5px);}
     to {backdrop-filter: blur(0px); pointer-events: none;}
 }
 
